@@ -4,10 +4,9 @@ create table clientes(
 	email varchar(30) unique
 );
 
-create table funcionarios(
+create table vendedores(
 	codigo int primary key auto_increment,
-	nome varchar(30),
-	cpf varchar(11) unique
+	nome varchar(30)
 );
 
 create table filiais(
@@ -44,8 +43,8 @@ create table vendas(
 	dataHora datetime,
 	codigoFilial int,
 	FOREIGN KEY (codigoFilial) REFERENCES filiais(codigo),
-	codigoFuncionario int,
-	FOREIGN KEY (codigoFuncionario) REFERENCES funcionarios(codigo),
+	codigoVendedor int,
+	FOREIGN KEY (codigoVendedor) REFERENCES vendedores(codigo),
 	codigoCliente int,
 	FOREIGN KEY (codigoCliente) REFERENCES clientes(codigo),
 	totalVenda float

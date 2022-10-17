@@ -11,18 +11,18 @@ VALUES
 ("Cliente9", "cliente9@gmail.com"),
 ("Cliente10", "cliente10@gmail.com");
 
-INSERT INTO funcionarios (nome, cpf)
+INSERT INTO vendedores (nome)
 VALUES
-("Funcionario1", "1111111111"),
-("Funcionario2", "1111111112"),
-("Funcionario3", "1111111113"),
-("Funcionario4", "1111111114"),
-("Funcionario5", "1111111115"),
-("Funcionario6", "1111111116"),
-("Funcionario7", "1111111117"),
-("Funcionario8", "1111111118"),
-("Funcionario9", "1111111119"),
-("Funcionario10", "1111111110");
+("Vendedor1"),
+("Vendedor2"),
+("Vendedor3"),
+("Vendedor4"),
+("Vendedor5"),
+("Vendedor6"),
+("Vendedor7"),
+("Vendedor8"),
+("Vendedor9"),
+("Vendedor10");
 
 INSERT INTO filiais (nome, cnpj)
 VALUES
@@ -76,7 +76,7 @@ VALUES
 ("P9M9", 9, 9, 9),
 ("P10M10", 10, 10, 10);
 
-INSERT INTO vendas (codigo, dataHora, codigoFilial, codigoFuncionario, codigoCliente)
+INSERT INTO vendas (codigo, dataHora, codigoFilial, codigoVendedor, codigoCliente)
 VALUES
 (1, NOW()+100, 1, 1, 1),
 (2, NOW()+200, 2, 2, 2),
@@ -91,11 +91,11 @@ VALUES
 
 INSERT INTO movimentacoesProdutos (tipo, codigoVenda, codigoFilial, codigoProduto, dataHora, quantidade, preco)
 VALUES
-("Entrada", 1, 1, 1, NOW()+100, 10, 1),
-("Entrada", 2, 2, 2, NOW()+200, 20, 2),
-("Entrada", 3, 3, 3, NOW()+300, 30, 3),
-("Entrada", 4, 4, 4, NOW()+400, 40, 4),
-("Entrada", 5, 5, 5, NOW()+500, 50, 5),
+("Entrada", NULL, 1, 1, NOW()+100, 10, 1),
+("Entrada", NULL, 2, 2, NOW()+200, 20, 2),
+("Entrada", NULL, 3, 3, NOW()+300, 30, 3),
+("Entrada", NULL, 4, 4, NOW()+400, 40, 4),
+("Entrada", NULL, 5, 5, NOW()+500, 50, 5),
 ("Saida", 1, 1, 1, NOW()+100, 1, 1.10),
 ("Saida", 2, 2, 2, NOW()+200, 2, 2.10),
 ("Saida", 3, 3, 3, NOW()+300, 3, 3.10),
