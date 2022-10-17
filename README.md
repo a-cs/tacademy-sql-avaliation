@@ -4,18 +4,16 @@
 
 - [x] Todas as tabelas devem possuir pelo menos dez registros;
 
-- [ ] Implementar ao menos cinco views com inner join;
-	- [ ] Necessário pelo menos dois inner joins contemplando duas tabelas;
-	- [ ] Necessário pelo menos mais dois inner joins contemplando três
-tabelas;
-	- [ ] Necessário pelo menos um inner join contemplando cinco tabelas ou
-mais.
+- [x] Implementar ao menos cinco views com inner join;
+	- [x] Necessário pelo menos dois inner joins contemplando duas tabelas;
+	- [x] Necessário pelo menos mais dois inner joins contemplando três tabelas;
+	- [x] Necessário pelo menos um inner join contemplando cinco tabelas ou mais.
 
-- [ ] Criar uma view com Left Join;
+- [x] Criar uma view com Left Join;
 
-- [ ] Criar uma view com Right Join;
+- [x] Criar uma view com Right Join;
 
-- [ ] Implementar o uso de pelo menos duas triggers;
+- [x] Implementar o uso de pelo menos duas triggers;
 
 - [ ] Implementar o uso de pelo menos dez procedures:
 	- [ ] Pelo menos três para realizar cadastros;
@@ -26,19 +24,19 @@ mais.
 alterar e remover dados;
 
 - [ ] Criar comandos DQL contendo as seguintes expressões:
-	- [ ] WHERE;
-	- [ ] AND;
+	- [X] WHERE;
+	- [x] AND;
 	- [ ] OR;
 	- [ ] BETWEEN;
 	- [ ] ORDER BY;
-	- [ ] GROUP BY;
+	- [X] GROUP BY;
 	- [ ] HAVING;
 	- [ ] LIKE;
 	- [ ] COUNT;
 	- [ ] MAX;
 	- [ ] MIN;
-	- [ ] IF;
+	- [X] IF;
 	- [ ] CASE;
-	- [ ] NOW;
+	- [X] NOW;
 	- [ ] DATE_FORMAT;
 	- [ ] Subqueries (utilização de dois comandos SQL na mesma query)
