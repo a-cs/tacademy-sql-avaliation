@@ -2,9 +2,9 @@ create procedure pCriarVenda(in codigoFilial int, in codigoVendedor int, in codi
 begin
 	declare codigoVenda int;
 	declare msg varchar(100);
-	select max(codigo)+1 into codigoVenda from vendas;
-	insert into vendas (codigo, dataHora, codigoFilial, codigoVendedor, codigoCliente)
-	values (codigoVenda, now(), codigoFilial, codigoVendedor, codigoCliente);
+	select IFNULL(max(codigo),0) + 1 into codigoVenda from vendas;
+	insert into vendas (codigo, dataHora, codigoFilial, codigoVendedor, codigoCliente, totalVenda)
+	values (codigoVenda, now(), codigoFilial, codigoVendedor, codigoCliente, 0);
 	set msg = "Venda criada com sucesso";
 	select msg;
 end;
@@ -18,8 +18,8 @@ begin
 	if (select count(*) from produtos p where p.nome = nome and p.codigoFilial = codigoFilial) !=0 THEN 
 		set msg = "O Produto já está cadastrado nessa filial";
 	ELSE
-		INSERT INTO produtos (nome, codigoMarca, codigoCategoria, codigoFilial)
-		VALUES (nome, codigoMarca, codigoCategoria, codigoFilial);
+		INSERT INTO produtos (nome, codigoMarca, codigoCategoria, codigoFilial, quantidade, precoMedioCompra)
+		VALUES (nome, codigoMarca, codigoCategoria, codigoFilial,0,0);
 		set msg = "Produto cadastrado com sucesso";
 	end if;
 	select msg;
