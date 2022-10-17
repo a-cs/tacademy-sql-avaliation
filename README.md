@@ -16,7 +16,7 @@
 - [x] Implementar o uso de pelo menos duas triggers;
 
 - [ ] Implementar o uso de pelo menos dez procedures:
-	- [ ] Pelo menos três para realizar cadastros;
+	- [X] Pelo menos três para realizar cadastros;
 	- [ ] Pelo menos três para alterar;
 	- [ ] Pelo menos três para remover.
 
@@ -28,12 +28,12 @@ alterar e remover dados;
 	- [x] AND;
 	- [ ] OR;
 	- [ ] BETWEEN;
-	- [ ] ORDER BY;
+	- [X] ORDER BY;
 	- [X] GROUP BY;
 	- [ ] HAVING;
 	- [ ] LIKE;
-	- [ ] COUNT;
-	- [ ] MAX;
+	- [X] COUNT;
+	- [X] MAX;
 	- [ ] MIN;
 	- [X] IF;
 	- [ ] CASE;
