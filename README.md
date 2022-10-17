@@ -2,7 +2,7 @@
 
   ![Modelagem do Banco](./assets/Diagrama.PNG)
 
-- [ ] Todas as tabelas devem possuir pelo menos dez registros;
+- [x] Todas as tabelas devem possuir pelo menos dez registros;
 
 - [ ] Implementar ao menos cinco views com inner join;
 	- [ ] Necessário pelo menos dois inner joins contemplando duas tabelas;

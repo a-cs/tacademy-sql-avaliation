@@ -16,12 +16,6 @@ create table filiais(
 	cnpj varchar(14) 
 );
 
--- create table pdvs (
--- 	codigo int primary key,
--- 	filialId int,
--- 	FOREIGN KEY (filialId) REFERENCES filiais(codigo)
--- );
-
 create table categorias(
 	codigo int primary key auto_increment,
 	nome varchar(30) 
